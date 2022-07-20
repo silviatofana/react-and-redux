@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable quotes */
 import Missions from "../components/missions/Missions";
-import Profile from "../components/Profile/Profile";
+import Profile from "../components/profile/Profile";
 import Rockets from "../components/rockets/Rockets";
 
 const routes = [
