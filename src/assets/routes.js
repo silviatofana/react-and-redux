@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable quotes */
-import Missions from "../components/Missions/Missions";
+import Missions from "../components/Missions/missions";
 import Profile from "../components/Profile/profile";
-import Rockets from "../components/Rockets/Rockets";
+import Rockets from "../components/Rockets/rockets";
 
 const routes = [
   {
