@@ -1,67 +1,74 @@
-* {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
   margin: 0;
-  border: none;
   padding: 0;
-}
-
-.header {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding: 25px;
-  justify-content: space-between;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 10px;
-}
-
-nav li {
-  list-style: none;
-  padding: 0 25px;
-}
-
-.link {
   text-decoration: none;
-  color: #4e98ec;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.active {
-  text-decoration: underline;
+body {
+  padding: 0 40px;
+  font-family: "Poppins", sans-serif;
 }
 
-.logo-img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
-.profile {
-  border-left: 2px solid #4393ee;
-  padding-left: 10px;
-}
-
-.rocket {
+.navbar {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid rgb(180, 177, 175);
 }
 
-.rocket-img img {
-  height: 270px;
-  width: 290px;
-  padding: 20px 0 0 40px;
+.navbar .brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
 }
 
-.rocket-description {
-  padding: 20px;
+.navbar .brand span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar .nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .nav-link a {
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link a.active-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.unselected {
+  text-decoration: none;
+}
+
+.rockets-container {
+  padding: 20px 0;
+}
+
+.profile-container {
+  margin: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    flex-direction: row;
+  }
 }

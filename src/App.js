@@ -1,20 +1,20 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Rockets from './components/rockets/rockets';
-import Missions from './components/missions/Missions';
-import Dragons from './components/dragons/Dragons';
-import MyProfile from './components/MyProfile';
+/* eslint-disable linebreak-style */
+/* eslint-disable quotes */
+
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import routes from "./assets/routes";
 
 function App() {
   return (
     <>
+
       <Header />
       <Routes>
-        <Route exact path="/" element={<Rockets />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/dragons" element={<Dragons />} />
-        <Route path="/myProfile" element={<MyProfile />} />
+        {routes.map(({ path, element }) => (
+          <Route key={path} exact path={path} element={element} />
+        ))}
       </Routes>
     </>
   );
