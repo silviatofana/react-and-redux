@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from 'react-bootstrap/Button';
 import { getRocketsFromAPI } from '../../redux/rockets/rockets';
 
 const Rockets = () => {
@@ -28,7 +27,6 @@ rocketsData.map((rocket) => (
       <p>
         {rocket.rocket_description}
       </p>
-      <Button variant="primary">Reserve Rocket</Button>
     </div>
   </div>
 ))
