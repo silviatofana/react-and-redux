@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable quotes */
 
-const Missions = () => (
+const Profile = () => (
   <>
-    <h1>Missions page</h1>
+    <h1>Profile page</h1>
   </>
 );
 
-export default Missions;
+export default Profile;
