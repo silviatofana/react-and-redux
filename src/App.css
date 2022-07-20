@@ -30,6 +30,7 @@ body {
   align-items: center;
   gap: 25px;
 }
+
 .navbar .brand span {
   font-size: 25px;
   font-weight: 600;
